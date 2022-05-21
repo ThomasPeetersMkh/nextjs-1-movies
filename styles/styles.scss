@@ -1,0 +1,52 @@
+@import "./reset.scss";
+
+body {
+  box-sizing: border-box;
+  header {
+    background-color: #252525;
+    padding: 12px;
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 40px;
+    }
+  }
+  .movieList {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    li {
+      flex: 1 1 320px;
+      a {
+        h2 {
+          font-size: 20px;
+        }
+        .imgHolder {
+          aspect-ratio: 2/3;
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .movieDetails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 12px;
+    .imgHolder {
+      aspect-ratio: 2/3;
+      max-width: 400px;
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
